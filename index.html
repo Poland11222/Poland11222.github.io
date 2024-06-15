@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="meta-name" property="og:title" content="polvnd">
+    <meta id="meta-description" property="og:description" content="im addicted to gambling...">
+    <title>polvnd.lol</title>
+    <meta property="og:title" content="polvnd.lol">
+    <link rel="icon" href="ggg.gif">
+    <meta name="theme-color" content="#080808">
+    <script src="https://kit.fontawesome.com/0e15170c4f.js" crossorigin="anonymous"></script>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+    <div id="enter">
+        <p>enter</p>
+    </div>
+    <div class="list">
+      <div class="members">
+          <div class="card">
+              <img class="pfp" src="ggg.gif" alt="poland">
+              <div class="username"><b>Poland🎄</b></div>
+              <img class="callsign" src="smoke.gif">
+              <div class="socials">
+                  <a href="https://discord.com/users/1135062719674974329" target="_blank"><i class="fab fa-discord" aria-hidden="true"></i></a>
+                  <a href="https://t.me/Polvnd" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                  <div>
+                    <a href="/next" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <video id="bgvid" playsinline loop>
+    <source src="tony1.mp4" type="video/mp4">
+    <source src="tony2.mp4" type="video/mp4">
+    <source src="tony3.mp4" type="video/mp4">
+</video>
+
+<script>
+    const videoSources = [
+        'tony.mp4',
+        'tony2.mp4',
+        'tony3.mp4'
+    ];
+    function playRandomVideo() {
+        const randomIndex = Math.floor(Math.random() * videoSources.length);
+        const videoPlayer = document.getElementById('bgvid');
+        videoPlayer.src = videoSources[randomIndex];
+        videoPlayer.play();
+    }
+    document.getElementById("enter").addEventListener("click", function () {
+        const target = document.getElementById("enter");
+        target.style.opacity = '0';
+        target.addEventListener('transitionend', () => target.remove());
+        playRandomVideo();
+    });
+    document.onclick = function () {
+        playRandomVideo();
+    };
+</script>
+<script src="disabledev.js"></script>
+<script src="disable.js"></script>
+<script src="ffont.js"></script>
+<script src="main.js"></script>
+<script src="disabledev.js"></script>
+<script src="title.js"></script>
+</html>
